@@ -1,0 +1,140 @@
+.footer {
+  background: #fff;
+}
+
+.addressItem,
+h2 {
+  color: #000;
+  font-family: Petrona;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+.navContactsList {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footerContainer {
+  display: flex;
+  background-color: #fff;
+  max-width: 688px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navRouteList,
+.navContactsList span {
+  display: none;
+}
+
+.contactDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7px;
+}
+
+.footerDetails {
+  display: flex;
+}
+.addressList {
+  width: 160px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 30px 0;
+  }
+  .navRouteList,
+  .navContactsList span {
+    display: block;
+  }
+
+  .footerContainer {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contactDetails {
+    display: flex;
+    width: 100%;
+    gap: 55px;
+    margin-left: 0;
+  }
+
+  .navLogo {
+    width: 91px;
+    height: 80px;
+    margin-right: 30px;
+  }
+  .addressList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+  }
+  .addressItem,
+  .addressItem h2 {
+    /* font-size: 18px; */
+    font-size: calc(10px + 1vw);
+  }
+
+  .navContactsLinkItem a {
+    color: #000;
+    font-family: Petrona;
+    /* font-size: 18px; */
+    font-size: calc(10px + 1vw);
+
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    display: flex;
+    gap: 5px;
+  }
+
+  .navContactsList {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: min-content;
+    align-content: center;
+  }
+  .navRouteList a {
+    color: #000;
+    font-family: Petrona;
+    /* font-size: 18px; */
+    font-size: calc(10px + 1vw);
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+
+  .navRouteList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .addressItem,
+  .addressItem h2,
+  .navContactsLinkItem a,
+  .navRouteList a {
+    font-size: 25px;
+  }
+
+  .addressList {
+    width: 361px;
+  }
+  .navContactsList {
+    width: 381px;
+  }
+  .navRouteList {
+    /* width: 224px; */
+    min-width: fit-content;
+  }
+}
